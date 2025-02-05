@@ -12,12 +12,12 @@ namespace Flyweight.Solution
             Types = new List<TreeType>();
         }
         
-        public static TreeType GetTreeType(string name, int color, int texture)
+        public static TreeType GetTreeType(int color, int texture)
         {
             var type = Types.SingleOrDefault(t => t.Colour == color && t.Texture == texture);
             if (type == null)
             {
-                type = new TreeType(name, color, texture);
+                type = new TreeType(color, texture);
                 Types.Add(type);
             }
 

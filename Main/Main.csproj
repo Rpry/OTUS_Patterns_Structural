@@ -10,6 +10,7 @@
       <ProjectReference Include="..\Adapter\Solution\Solution.csproj" />
       <ProjectReference Include="..\Bridge\Solution\Solution.csproj" />
       <ProjectReference Include="..\Composite\Solution\Solution.csproj" />
+      <ProjectReference Include="..\Decorator\Problem\Problem.csproj" />
       <ProjectReference Include="..\Decorator\Solution\Solution.csproj" />
       <ProjectReference Include="..\Facade\Solution\Solution.csproj" />
       <ProjectReference Include="..\Flyweight\Solution\Solution.csproj" />

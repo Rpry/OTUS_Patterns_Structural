@@ -1,10 +1,10 @@
-﻿namespace Decorator.Solution
+﻿namespace Decorator.Solution.Decorators
 {
-    public class BaseExternalSystemNotifier : INotificationService
+    public class BaseDecorator : INotificationService
     {
         private readonly INotificationService _notificationService;
 
-        protected BaseExternalSystemNotifier(INotificationService notificationService)
+        protected BaseDecorator(INotificationService notificationService)
         {
             _notificationService = notificationService;
         }

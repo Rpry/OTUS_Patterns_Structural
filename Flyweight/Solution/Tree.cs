@@ -15,9 +15,9 @@
             Type = type;
         }
 
-        public void Draw(int canvas)
+        public void Draw()
         {
-            Type.Draw(canvas, X, Y);
+            Type.Draw(Type.Colour,Type.Texture, X, Y);
         }
             
     }

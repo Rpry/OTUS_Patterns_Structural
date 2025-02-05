@@ -1,21 +1,22 @@
-﻿namespace Flyweight.Solution
+﻿using System;
+
+namespace Flyweight.Solution
 {
     public class TreeType
     {
-        public string Name { get; set; }
-        
+        public Guid Id { get; set; }
         public int Colour { get; set; }
         
         public int Texture { get; set; }
 
-        public TreeType(string name, int colour, int texture)
+        public TreeType(int colour, int texture)
         {
-            Name = name;
             Colour = colour;
             Texture = texture;
+            Id = Guid.NewGuid();
         }
         
-        public void Draw(int canvas, double x, double y)
+        public void Draw(int colour, int texture, double x, double y)
         {
             // используем Colour, Texture, x, y,
         }

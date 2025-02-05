@@ -9,7 +9,14 @@
         
         public override void TogglePower()
         {
-           
+            if (!_device.IsEnabled())
+            {
+                _device.Disable();
+            }
+            else
+            {
+                _device.Enable();
+            }
         }
     }
 }

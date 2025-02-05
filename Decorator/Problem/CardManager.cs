@@ -21,20 +21,20 @@ namespace Decorator.Problem
             
             if (_notificationOptions.SendFBNotification)
             {
-                notificationService.Notify();
+                //notificationService.NotifyFB();
             }
 
             if (_notificationOptions.SendFBNotification && _notificationOptions.SendToSms)
             {
-                notificationService.Notify();
-                notificationService.Notify();
+                //notificationService.NotifyFB();
+                //notificationService.NotifySms();
             }
 
             if (_notificationOptions.SendToSms && _notificationOptions.SendFBNotification && _notificationOptions.SendToEmail)
             {
-                notificationService.Notify();
-                notificationService.Notify();
-                notificationService.Notify();
+                //notificationService.NotifySms();
+                //notificationService.NotifyFb();
+                //notificationService.NotifyEmail();
             }
         }
     }

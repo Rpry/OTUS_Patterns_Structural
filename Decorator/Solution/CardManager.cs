@@ -1,4 +1,5 @@
 ﻿using CardLibrary;
+using Decorator.Solution.Decorators;
 
 namespace Decorator.Solution
 {
@@ -16,20 +17,20 @@ namespace Decorator.Solution
         public void Issue()
         {
             _cardIssueService.Issue(new Message());
-            INotificationService notificationService = new ApplicationNotifier();
+            INotificationService notificationService = new ApplicationNotificationService();
             if (_notificationOptions.SendFBNotification)
             {
-                notificationService = new FaceBookNotificationService(notificationService);
-            }
+                notificationService = new FaceBookDecorator(notificationService);
+            } 
 
             if (_notificationOptions.SendToSms)
             {
-                notificationService = new SmsNotificationService(notificationService);
+                notificationService = new SmsNotificationDecorator(notificationService);
             }
 
             if (_notificationOptions.SendToEmail)
             {
-                notificationService = new EmailNotificationService(notificationService);
+                notificationService = new EmailNotificationDecorator(notificationService);
             }
             
             notificationService.Notify();
