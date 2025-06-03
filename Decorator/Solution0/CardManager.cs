@@ -30,7 +30,7 @@ namespace Decorator.Solution
             if (_notificationOptions.SendFBNotification)
             {
                 _faceBookNotificationService.Notify();
-            } 
+            }
 
             if (_notificationOptions.SendToSms)
             {

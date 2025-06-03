@@ -1,6 +1,6 @@
 ﻿namespace Decorator.Problem
 {
-    public sealed class ApplicationNotifier : INotificationService
+    public sealed class ApplicationNotificationService : INotificationService
     {
         public void Notify()
         {

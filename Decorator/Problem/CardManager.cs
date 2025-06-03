@@ -16,7 +16,7 @@ namespace Decorator.Problem
         public void Issue()
         {
             _cardIssueService.Issue(new Message());
-            INotificationService notificationService = new ApplicationNotifier();
+            INotificationService notificationService = new ApplicationNotificationService();
             notificationService.Notify();
             
             if (_notificationOptions.SendFBNotification)

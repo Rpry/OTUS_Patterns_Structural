@@ -24,7 +24,7 @@ namespace Proxy.Problem
 
         public void Render(VideoInfo videoInfo)
         {
-            //
+            //обработка
         }
     }
 }

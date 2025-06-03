@@ -64,5 +64,10 @@
         {
             return _a.Prepare(x) + 1;
         }
+        
+        public int Do(int x)
+        {
+            return Prepare(x)^2;
+        }
     }
 }

@@ -25,27 +25,25 @@ namespace StructuralPatterns
             cardManager.Issue(cardInfo);
 
             #endregion
-            */
-
-/*
+*/
+    /*
             #region Decorator
             
             var notificationOptions = new NotificationOptions()
             {
                 SendToEmail = true,
-                SendToSms = false,
+                SendToSms = true,
                 SendFBNotification = true
             };
             var decoratorCardManager = new Decorator.Solution.CardManager(notificationOptions);
             decoratorCardManager.Issue();
-
+*/
             //FileDecorator.Write();
             //FileDecorator.WriteArchived();
             
-            #endregion
-*/           
-            
-            /*
+            //#endregion
+    
+/*
             #region Proxy
 
             var youTubeThirdPartyManager = new YouTubeThirdPartyManager();
@@ -56,7 +54,7 @@ namespace StructuralPatterns
             youTubeManager.RenderVideoPage(1);
 
             #endregion
-            */
+*/
             
             /*
             #region Facade
@@ -92,17 +90,19 @@ namespace StructuralPatterns
             forest.Draw();
 
             #endregion
-*/          
+  */     
 /*
             #region Composite
 
             var pie = new Composite.Solution.Pie(10);
+            var pizza = new Composite.Solution.Pizza(20);
             var container = new Composite.Solution.Container(1);
             container.AddProduct(pie);
+            container.AddProduct(pizza);
             var price = container.GetPrice();
 
             #endregion
-            */
+*/
         }
     }
 }
