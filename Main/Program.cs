@@ -26,7 +26,7 @@ namespace StructuralPatterns
 
             #endregion
 */
-    /*
+    
             #region Decorator
             
             var notificationOptions = new NotificationOptions()
@@ -37,24 +37,24 @@ namespace StructuralPatterns
             };
             var decoratorCardManager = new Decorator.Solution.CardManager(notificationOptions);
             decoratorCardManager.Issue();
-*/
-            //FileDecorator.Write();
-            //FileDecorator.WriteArchived();
+
+            FileDecorator.FileDecorator.Write();
+            FileDecorator.FileDecorator.WriteArchived();
             
-            //#endregion
-    
-/*
-            #region Proxy
-
-            var youTubeThirdPartyManager = new YouTubeThirdPartyManager();
-            var youTubeThirdPartyManagerCached =
-                new Proxy.Solution.YouTubeThirdPartyManagerCached(youTubeThirdPartyManager);
-            var youTubeManager = new Proxy.Solution.YouTubeManager(youTubeThirdPartyManagerCached);
-            youTubeManager.RenderVideoPage(1);
-            youTubeManager.RenderVideoPage(1);
-
             #endregion
-*/
+/*
+
+                    #region Proxy
+
+                    var youTubeThirdPartyManager = new YouTubeThirdPartyManager();
+                    var youTubeThirdPartyManagerCached =
+                        new Proxy.Solution.YouTubeThirdPartyManagerCached(youTubeThirdPartyManager);
+                    var youTubeManager = new Proxy.Solution.YouTubeManager(youTubeThirdPartyManagerCached);
+                    youTubeManager.RenderVideoPage(1);
+                    youTubeManager.RenderVideoPage(1);
+
+                    #endregion
+        */
             
             /*
             #region Facade

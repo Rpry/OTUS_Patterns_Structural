@@ -1,8 +1,7 @@
-﻿using System.IO;
-using System.IO.Compression;
+﻿using System.IO.Compression;
 using System.Text;
 
-namespace Decorator.Problem
+namespace FileDecorator
 {
     public static class FileDecorator
     {
