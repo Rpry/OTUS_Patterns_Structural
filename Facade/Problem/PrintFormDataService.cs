@@ -14,5 +14,7 @@ namespace Facade.Problem
             var printFormData = new PrintFormDataDto();
             return printFormData;
         }
+        
+        // Много другого функционала
     }
 }

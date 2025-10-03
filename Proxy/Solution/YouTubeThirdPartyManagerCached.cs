@@ -9,7 +9,7 @@ namespace Proxy.Solution
 
         private Dictionary<int, VideoInfo> cache = new Dictionary<int, VideoInfo>();
 
-        public YouTubeThirdPartyManagerCached(IYouTubeThirdPartyManager youTubeThirdPartyManager)
+        public YouTubeThirdPartyManagerCached(YouTubeThirdPartyManager youTubeThirdPartyManager)
         {
             _youTubeThirdPartyManager = youTubeThirdPartyManager;
         }
@@ -22,6 +22,7 @@ namespace Proxy.Solution
             }
             else
             {
+                
                 var videoInfo = _youTubeThirdPartyManager.GetVideoInfo(id);
                 cache.Add(id, videoInfo);
                 return videoInfo;

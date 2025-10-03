@@ -8,5 +8,7 @@ namespace Facade.Problem
         {
             return new byte[0];
         }
+
+        // Много другого функционала
     }
 }
